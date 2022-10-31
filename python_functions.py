@@ -1,3 +1,5 @@
+import re
+
 def sum_to(num):
   total = 0
 
@@ -14,3 +16,8 @@ def largest(lst):
       largest = num
 
   return largest
+
+def occurrences(str, char):
+  return len(re.findall(char, str))
+
+print(occurrences('fleep floop', 'fe'))
