@@ -20,4 +20,9 @@ def largest(lst):
 def occurrences(str, char):
   return len(re.findall(char, str))
 
-print(occurrences('fleep floop', 'fe'))
+def product(*args):
+  product = 1
+  for arg in args:
+    product *= arg
+  
+  return product
